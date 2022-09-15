@@ -239,3 +239,40 @@ footer {
   color: #868e96;
   /* font-style: italic; */
 }
+
+@media screen and (max-width: 769px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    padding: 0 3.4rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+  .chair {
+    width: 50%;
+    height: 100%;
+    justify-self: center;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .header-text-box h1 {
+    font-size: 6.4rem;
+    text-align: center;
+  }
+  .header-text {
+    font-size: 2.4rem;
+  }
+}
